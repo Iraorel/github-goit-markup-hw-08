@@ -1,0 +1,23 @@
+.portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+    padding: 40px;
+  }
+  .portfolio__member {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+  }
+
+  .portfolio__item:not(:last-child) {
+    margin-right: 8px;
+  }
