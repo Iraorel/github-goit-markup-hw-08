@@ -151,7 +151,6 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
-  /*outline: 2px solid red;*/
 }
 
 body {
@@ -237,19 +236,19 @@ img {
 
 @media screen and (min-width: 480px) {
   .conteiner {
-    max-width: 480px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .conteiner {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .conteiner {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -665,10 +664,7 @@ img {
   flex-basis: calc((100%- (30px * var(--grid-item))) / var(--grid-item));
   margin-left: 30px;
   margin-top: 30px;
-}
-
-.grid-item-portfolio {
-  --grid-item: 9;
+  --grid-item:9;
 }
 
 @media screen and (min-width: 480px) {
@@ -938,12 +934,6 @@ img {
   align-items: center;
 }
 
-@media screen and (max-width: 767.98px) {
-  .contacts-link {
-    display: none;
-  }
-}
-
 .contacts-link .icon {
   width: 16px;
   height: 12px;
@@ -972,19 +962,7 @@ img {
 }
 
 .team-item {
-  --grid-item: 1;
-}
-
-@media screen and (min-width: 768px) {
-  .team-item {
-    --grid-item: 2;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team-item {
-    --grid-item: 4;
-  }
+  --grid-item: 4;
 }
 
 .team__member {
@@ -1019,12 +997,6 @@ img {
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
-}
-
-@media screen and (max-width: 767.98px) {
-  .menu--desktop {
-    display: none;
-  }
 }
 
 .main-nav {
