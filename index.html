@@ -37,30 +37,35 @@
          +380961111111</a></li>
        </ul>
       </div>
-      </nav>
-      <button class="mobile-menu-btn" data-menu-button >
+      <button type="button" class="mobile-menu-btn is-open" aria-controls="mobile-menu" data-menu-button>
          <svg class="mobile-menu-icon">
             <use class="icon-menu" href="./images/sprite.svg.svg#icon-menu"></use> 
             <use class="icon-close" href="./images/sprite.svg.svg#icon-close"></use>
          </svg>   
       </button>
+   
+         <div class="mobile-menu" id="mobile-menu" data-menu>
+            <ul class =" site-nav list " >
+               <li class="item"> <a href="./index.html" class="link menu__link  ">Cтудия</a></li>
+               <li class="item"> <a href="./portfolio.html" class="link menu__link ">Портфолио</a></li>
+               <li class="item"> <a href="#contact-us" class="link menu__link  ">Контакты</a></li>
+            </ul>
+         
+               <ul class="auth-nav list">
+               <li class="item contacts" ><a  class="link contacts-link" href="mailto:info@devstudio.com">
+                      info@devstudio.com</a></li>
+               <li class="item contacts"><a class="link contacts-link"  href="tel:+380961111111">
+                    +380961111111</a></li>
+                </ul>
+
+                
+         </div>
+
+      </nav>
+      
    </div>
      </header>
-<div class="mobile-overlay">
-<div class="mobile-menu" data-menu>
-   <ul class =" site-nav list " >
-      <li class="item"> <a href="./index.html" class="link menu__link  ">Cтудия</a></li>
-      <li class="item"> <a href="./portfolio.html" class="link menu__link ">Портфолио</a></li>
-      <li class="item"> <a href="#contact-us" class="link menu__link  ">Контакты</a></li>
-   </ul>
 
-      <ul class="auth-nav list">
-      <li class="item contacts" ><a  class="link contacts-link" href="mailto:info@devstudio.com">
-             info@devstudio.com</a></li>
-      <li class="item contacts"><a class="link contacts-link"  href="tel:+380961111111">
-           +380961111111</a></li>
-       </ul>
-</div>
 </div>
      <main>
        <!-- Герой -->
