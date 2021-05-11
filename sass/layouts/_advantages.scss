@@ -14,10 +14,20 @@
     border-radius: 4px;
     margin-bottom: 30px;
 
+   @media screen and(max-width:480px) {
+     width: 100%;
+     
+   }
+
   }
   
   .icon__advantages {
     width: 65px;
     height: 70px;
   }
+  
+
+
+ 
+  
   

@@ -3,15 +3,33 @@
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 94px;
-  }
+
   
+  }
+.desc{
+  @media screen and(max-width:480px){
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media screen and(max-width:768px){
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+}
+
+
   .desc .item:not(:last-child) {
     margin-right: 30px;
   }
+  
+
   .grup-desk {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  
+
   

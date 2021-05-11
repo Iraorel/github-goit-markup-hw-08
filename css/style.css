@@ -417,6 +417,12 @@ img {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 480px) {
+  .title {
+    text-align: center;
+  }
+}
+
 .page-title {
   height: 120px;
   margin: auto;
@@ -853,6 +859,12 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .advantages {
+    width: 100%;
+  }
+}
+
 .icon__advantages {
   width: 65px;
   height: 70px;
@@ -1148,6 +1160,21 @@ img {
   margin-bottom: 94px;
 }
 
+@media screen and (max-width: 480px) {
+  .desc {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desc {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .desc .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -1165,5 +1192,11 @@ img {
   letter-spacing: 00.03em;
   color: var(--dark-bg-text-color);
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .item {
+    padding-left: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
