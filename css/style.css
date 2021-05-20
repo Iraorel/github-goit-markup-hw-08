@@ -1238,6 +1238,12 @@ img {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 480px) {
+  .clients__grup {
+    margin-bottom: 30px;
+  }
+}
+
 .clients:not(:last-child) {
   margin-right: 30px;
 }
@@ -1260,18 +1266,16 @@ img {
   margin-bottom: 94px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .desc {
     display: block;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .desc {
-    padding-left: 15px;
-    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -1285,9 +1289,22 @@ img {
   display: inline-flex;
 }
 
-@media screen and (min-width: 480) {
+@media screen and (min-width: 480px) {
   .grup-desk {
-    display: block;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grup-desk {
+    flex-wrap: wrap;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grup-desk {
+    margin-left: -30px;
   }
 }
 
