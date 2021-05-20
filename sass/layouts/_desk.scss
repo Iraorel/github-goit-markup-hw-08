@@ -1,18 +1,27 @@
 .desc {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: block;
     margin-bottom: 94px;
 
     @media screen and (min-width:480px) {
       display: block;
+      text-align: center;
+
     }
      
      @media screen and (min-width:768px) {
        display:flex;
-      flex-wrap: wrap;
+       text-align: start;
+      flex-basis: calc(100%  / 2);
   
   }
+  @media screen and (min-width:1200px) {
+    display:flex;
+   
+
+}
+
 }
 
 

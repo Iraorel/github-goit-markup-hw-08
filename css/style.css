@@ -936,10 +936,12 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .advantages {
     display: block;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -948,7 +950,7 @@ img {
   height: 70px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .icon__advantages {
     align-items: center;
   }
@@ -1262,20 +1264,28 @@ img {
 .desc {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: block;
   margin-bottom: 94px;
 }
 
 @media screen and (min-width: 480px) {
   .desc {
     display: block;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 768px) {
   .desc {
     display: flex;
-    flex-wrap: wrap;
+    text-align: start;
+    flex-basis: calc(100%  / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .desc {
+    display: flex;
   }
 }
 

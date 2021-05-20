@@ -14,9 +14,11 @@
     border-radius: 4px;
     margin-bottom: 30px;
 
-   @media screen and(max-width:480px) {
+   @media screen and(min-width:480px) {
      display: block;
      width: 100%;
+     margin-left: auto;
+     margin-right: auto;
      
    }
 
@@ -26,8 +28,9 @@
     width: 65px;
     height: 70px;
 
-    @media screen and(max-width:480px) {
+    @media screen and(min-width:480px) {
      align-items: center;
+     
       
     }
   }
