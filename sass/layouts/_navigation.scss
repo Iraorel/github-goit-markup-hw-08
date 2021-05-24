@@ -10,12 +10,18 @@
     margin-right: 50px;
   }
 
-  @media screen  and(max-width: 767.98px){
+
     .menu--item{
       display: none;
-    }
+
+      @media screen and(min-width: 768px){
+        display: inline-flex;
+        
+      }
     
   }
+
+
   .main-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -30,8 +36,19 @@
   .auth-nav {
     display: -webkit-box;
     display: -ms-flexbox;
+
+    display: none;
+
+    @media screen  and(min-width: 768px){
+      display: block;
+      
+    }
+
+    @media screen  and (min-width: 1200px){
     justify-content:space-between ;
     display: flex;
+
+    }
      
   }
   
