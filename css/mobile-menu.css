@@ -1,14 +1,23 @@
-.mobile-menu-btn {
+.mobile-menu__btn {
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
-.mobile-menu-icon {
+@media screen and (min-width: 768px) {
+  .mobile-menu__btn {
+    display: none;
+  }
+}
+
+.mobile-menu__icon {
   width: 24px;
   height: 16px;
 }
 
-.mobile-menu {
+.menu-btn {
   position: fixed;
   top: 0;
   left: 0;
