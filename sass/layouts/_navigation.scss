@@ -11,7 +11,7 @@
   }
 
 
-    .menu--item{
+ .menu--item{
       display: none;
 
       @media screen and(min-width: 768px){
@@ -53,7 +53,15 @@
   }
   
   .auth-nav .item + .item {
+
+    @media screen and (min-width: 480px){
+    margin-left: -10px;
+    }
+
+   @media screen and (min-width: 1200px){
+     
     margin-left: 50px;
+   }
   }
   .adress {
     padding-top: 9px;
