@@ -13,10 +13,8 @@
     position: relative;
     -ms-flex-preferred-size: calc(100%-30px * var(--grid-item) / var(--grid-item));
         flex-basis: calc((100% - (30px * var(--grid-item)) / var(--grid-item)));
+    margin-bottom: 30px;
  
-    --grid-item: 3;
-
-
 
     @media screen  and ( min-width: 480px){
       --grid-item: 1;
@@ -25,13 +23,14 @@
     
   }
     @media screen  and ( min-width: 768px){
-      --grid-item: 2;
+     flex-wrap: wrap;
     
   }
   
   @media screen  and ( min-width: 1200px){
-    --grid-item: 3;
+   --grid-item: 3;
     margin-left: 30px;
+    flex-basis: auto;
   
 }
   }
@@ -56,10 +55,10 @@
   
 .grid-item-portfolio {
   -ms-flex-preferred-size: calc(100%- 30px * var(--grid-item) / var(--grid-item));
-  flex-basis: calc((100%-(30px*var(--grid-item)))/var(--grid-item));
+  flex-basis: calc((100%-(30px * var(--grid-item)))/var(--grid-item));
   margin-left: 30px;
   margin-top: 30px;
-  --grid-item: 3;
+  --grid-item: 9;
  
 
 
@@ -75,6 +74,7 @@
 
   @media screen  and ( min-width: 1200px) {
     --grid-item: 3;
+   
   
 }
 
