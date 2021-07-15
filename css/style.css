@@ -236,7 +236,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .conteiner {
-    max-width: 480px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
     /* background: cornflowerblue;*/
@@ -556,7 +556,7 @@ img {
 }
 
 .name-modals {
-  left: -120%;
+  text-align: right;
 }
 
 .fiel-input {
@@ -615,7 +615,7 @@ img {
 
 .check__input:focus + .check__box {
   background-color: var(--accent-color);
-  background-image: url(..images/icon/Vector3.svg);
+  background-image: url(..images/icon/iconcheck.svg);
 }
 
 .tema-modal {
@@ -791,14 +791,6 @@ img {
   -ms-flex-preferred-size: calc(100%-30px * var(--grid-item) / var(--grid-item));
   flex-basis: calc((100% - (30px * var(--grid-item)) / var(--grid-item)));
   margin-bottom: 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .grid__item {
-    --grid-item: 1;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1075,10 +1067,10 @@ img {
   background-repeat: no-repeat;
 }
 
-.hero {
-  text-align: center;
-}
+/* .hero {
+    text-align: center;
 
+  }*/
 .card-content {
   display: inline-block;
   width: 370px;
