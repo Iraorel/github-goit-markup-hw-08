@@ -109,52 +109,56 @@
        <div class="modal"  >
       
        <button  class=" button-modals" data-modal-close >  <svg class="icon-advantages-butten "><use href="./images/sprite.svg.svg#icon-Vector2" ></svg> </use> </button>
-       <h3 class="tema-modal">Оставьте свои данные, мы вам перезвоним</h3>
+       <p class="tema-modal">Оставьте свои данные, мы вам перезвоним</p>
        <form class="form-modal" autocomplete="on">
          
-         <div class="form-field">
             
-            <label for="name" class="name-modals" >Имя</label>  
-            <input type="text" class="fiel-input"  name="name" id="name" placeholder=" " pattern="[A-Za-zА-Яа-яЁё]/s"> 
+            <label  class="name-modals" >Имя 
+               <span class="form-field">
+            <input type="text" class="fiel-input"  name="name"  placeholder=" " pattern="[A-Za-zА-Яа-яЁё]/s"> 
             <svg class="icon-modals" widht="12" height="12">
-               <use href="./images/sprite.svg.svg#icon-head"></use>
-            </svg>             
-               </div>
-
-          <div class="form-field">
-            <label for="tel" class="name-modals" >Телефон</label>  
-            <input type="tel" class="fiel-input"  name="tel" id="tel" placeholder=" " pattern="[0-9]">
+               <use href="./images/sprite.svg.svg#name"></use>
+            </svg>    
+               </span>
+           </label>
+   
+            <label class="name-modals" >Телефон 
+               <span  class="form-field">
+            <input type="tel" class="fiel-input"  name="tel"  placeholder=" " pattern="[0-9]">
             <svg class="icon-modals" widht="13" height="13">
-               <use href="./images/sprite.svg.svg#icon-phon"></use>
-            </svg>   
+               <use href="./images/sprite.svg.svg#tell"></use>
+            </svg>  
+               </span>
+            </label>
                   
-          </div>
-
-          <div class="form-field">
-            <label for="email" class="name-modals">Почта</label>  
-            <input type="email" class="fiel-input"  name="email" id="email"  placeholder=" " patter="[A-Za-zА ][0-9]{3}"> 
-                       <svg class="icon-modals" widht="15" height="12" >
-               <use href="./images/sprite.svg.svg#icon-mail"></use>
-            </svg>   
-          </div>
+         
+            <label  class="name-modals">Почта
+               <span  class="form-field">
+            <input type="email" class="fiel-input"  name="email"  placeholder=" " patter="[A-Za-zА ][0-9]{3}"> 
+            <svg class="icon-modals" widht="15" height="12">
+               <use href="./images/sprite.svg.svg#mail"></use>
+            </svg>
+               </span>
+            </label>
+          
       
 
-         <div class="form-field">
-            <label for="comments" class="name-modals">Комментарий</label>  
-            <textarea  class="fiel-input comments" name="comments" id="comments" cols="30" rows="5" placeholder="Введите текст" pattern="[A-Za-zА-Яа-яЁё]/s"></textarea>
-                
-               </div>
+         
+            <label  class="name-modals">Комментарий
+               <span class="form-field">
+            <textarea  class="fiel-input comments" name="comments" placeholder="Введите текст" pattern="[A-Za-zА-Яа-яЁё]/s"></textarea>
+                </span>
+            </label>
+             
 
           <div class="form-field-checkbox">
-            <label  class="check" for="check">
+           
                <input class="check__input" type="checkbox" name="check" id="check" value="meeting"   placeholder=" " >
+               <label class="check" for="check">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
                <svg class="check__box" >
                   <use href="./images/sprite.svg.svg/#iconcheck"></use>
                </svg>
-              Соглашаюсь с рассылкой и принимаю  <a href="#">Условия договора</a>
-            </label>
-     
-      
+                 
       </div>
 
          <button class="button" type="submit">Отправить</button>
