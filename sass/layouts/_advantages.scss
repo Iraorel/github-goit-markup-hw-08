@@ -16,16 +16,18 @@
 
   @media screen and(min-width:480px) {
     display: block;
-    width: 100%;
+    width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media screen and(min-width:768px) {
+    width: 354px;
   }
 
-  @media screen and(min-width:12200px) {
-    display: flex;
+  @media screen and(min-width:1200px) {
+   
+    width: 270px;
   }
 }
 

@@ -236,6 +236,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .conteiner {
+    width: 480;
     margin-left: auto;
     margin-right: auto;
     /* background: cornflowerblue;*/
@@ -244,14 +245,14 @@ img {
 
 @media screen and (min-width: 768px) {
   .conteiner {
-    max-width: 768px;
+    width: 768px;
     /*background: crimson;*/
   }
 }
 
 @media screen and (min-width: 1200px) {
   .conteiner {
-    max-width: 1200px;
+    width: 1200px;
     /* background: darkgreen;*/
   }
 }
@@ -799,6 +800,8 @@ img {
 @media screen and (min-width: 768px) {
   .grid__item {
     flex-wrap: wrap;
+    flex-basis: calc((100%-4*15)/2);
+    margin: 15px;
   }
 }
 
@@ -844,7 +847,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .grid-item-portfolio {
-    --grid-item: 2;
+    flex-basis: 50%;
+    flex-wrap: wrap;
   }
 }
 
@@ -1024,15 +1028,21 @@ img {
 @media screen and (min-width: 480px) {
   .advantages {
     display: block;
-    width: 100%;
+    width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-@media screen and (min-width: 12200px) {
+@media screen and (min-width: 768px) {
   .advantages {
-    display: flex;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    width: 270px;
   }
 }
 
@@ -1255,13 +1265,6 @@ img {
 
 .team-item {
   text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .team-item {
-    max-width: 768px;
-    --grid-item: 2;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
@@ -1493,6 +1496,7 @@ img {
 @media screen and (min-width: 480px) {
   .item {
     padding-left: 15px;
+    margin-bottom: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
