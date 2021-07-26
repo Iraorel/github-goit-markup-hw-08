@@ -3,14 +3,20 @@
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
-
-    @media screen and (min-width: 480px){
-     
-    }
+    
+  }
+.team-grup{
+  @media screen  and(min-width:480px){
+  display:none ;
       
+  }
+
+  @media screen  and(min-width:768px){
+
     
   }
 
+}
 
 .team-item {
    

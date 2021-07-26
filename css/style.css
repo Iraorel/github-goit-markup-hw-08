@@ -787,7 +787,12 @@ img {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    margin-left: 45px;
+  }
 }
 
 .grid__item {
@@ -801,14 +806,12 @@ img {
   .grid__item {
     flex-wrap: wrap;
     flex-basis: calc((100%-4*15)/2);
-    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .grid__item {
     --grid-item: 3;
-    margin-left: 30px;
     flex-basis: auto;
   }
 }
@@ -1261,6 +1264,12 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 480px) {
+  .team-grup {
+    display: none;
+  }
 }
 
 .team-item {
