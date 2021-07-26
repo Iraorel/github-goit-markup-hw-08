@@ -97,15 +97,15 @@
   border-radius: 4px;
   padding: 12px 16px;
   resize: none;
-}
 
-.fiel-input-comments:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 
-.fiel-input-comments::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .check__input:checked + .checkbox-label::before {
@@ -120,13 +120,14 @@
   align-items: center;
   font-size: 14px;
   color: #757575;
-}
-.checkbox-label::before {
-  display: block;
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 1px solid #212121;
-  cursor: pointer;
-  margin-right: 7px;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 1px solid #212121;
+    cursor: pointer;
+    margin-right: 7px;
+  }
 }
