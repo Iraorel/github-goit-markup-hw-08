@@ -439,8 +439,9 @@ img {
 
 .title {
   font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 00.03em;
   text-transform: uppercase;
   color: var(--title-color);
   margin-bottom: 50px;
@@ -471,8 +472,8 @@ img {
 }
 
 .page-title {
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
@@ -480,8 +481,8 @@ img {
 }
 
 .section-title {
-  font-weight: bold;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -490,8 +491,8 @@ img {
 }
 
 .section-title-comands {
-  font-weight: bold;
   font-size: 28px;
+  font-weight: 700;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -506,8 +507,8 @@ img {
 }
 
 .join-title {
-  font-weight: bold;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--dark-bg-text-color);
