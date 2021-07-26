@@ -236,7 +236,6 @@ img {
 
 @media screen and (min-width: 480px) {
   .conteiner {
-    width: 480px;
     margin-left: auto;
     margin-right: auto;
     /* background: cornflowerblue;*/
@@ -791,7 +790,7 @@ img {
 
 .grid__item {
   position: relative;
-  -ms-flex-preferred-size: calc(100%-30px * var(--grid-item) / var(--grid-item));
+  -ms-flex-preferred-size: calc( 100%-30px * var(--grid-item) / var(--grid-item));
   flex-basis: calc((100% - (30px * var(--grid-item)) / var(--grid-item)));
   margin-bottom: 30px;
 }
@@ -812,6 +811,7 @@ img {
 
 .grid__text {
   position: absolute;
+  width: 370px;
   top: 224px;
   left: 0;
   right: 0;
@@ -828,8 +828,8 @@ img {
 }
 
 .grid-item-portfolio {
-  -ms-flex-preferred-size: calc(100%- 30px * var(--grid-item) / var(--grid-item));
-  flex-basis: calc((100%-(30px * var(--grid-item)))/var(--grid-item));
+  -ms-flex-preferred-size: calc( 100%- 30px * var(--grid-item) / var(--grid-item));
+  flex-basis: calc((100%- (30px * var(--grid-item))) / var(--grid-item));
   margin-left: 30px;
   margin-top: 30px;
   --grid-item: 9;
@@ -1026,12 +1026,6 @@ img {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advantages {
-    width: calc((100% - 30px * 2)/2);
   }
 }
 
@@ -1498,13 +1492,6 @@ img {
 @media screen and (min-width: 480px) {
   .item {
     padding-left: 15px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .item {
-    display: flex;
-    flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=style.css.map */
