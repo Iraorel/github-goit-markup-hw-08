@@ -289,8 +289,16 @@ img {
   border-radius: 50%;
 }
 
-.button-forms {
+.button-form {
+  width: 200px;
+  height: 50px;
   align-self: center;
+  padding: 10px 32px;
+  color: var(--dark-bg-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-portfolio {
@@ -528,7 +536,6 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  height: 580px;
   width: 530px;
   background-color: var(--dark-bg-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -620,10 +627,10 @@ img {
   background-image: url(../images/icon-check.svg);
 }
 
-/*
 .check__input:focus + .checkbox-label::before {
   background-image: url(../images/icon-check.svg);
-}*/
+}
+
 .checkbox-label {
   display: flex;
   align-items: center;
@@ -641,105 +648,6 @@ img {
   margin-right: 7px;
 }
 
-/*
-.icon-modals {
-  position: absolute;
-  top: 60%;
-  left: -120px;
-  display: inline-block;
-  color: var(--title-color);
-}
-
-.name-modals {
-  text-align: right;
-}
-
-.fiel-input {
-  margin: 0;
-  padding: 10px 20px;
-  padding-left: 40px;
-  border-radius: 3px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  width: 100%;
-}
-
-.fiel-input .comments {
-  resize: none;
-}
-
-.fiel-input:focus + .icon-modals {
-  fill: var(--accent-color);
-}
-
-.fiel-input:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.form-field-checkbox {
-  display: inline-block;
-}
-
-.check__input {
-  -webkin-appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  position: absolute;
-}
-
-.form-field-checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.check__box {
-  display: inline-block;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  border: 1px solid var(--dark);
-  border-radius: 2px;
-  -webkit-transition: var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
-  stroke: #ffffff;
-}
-
-.check__input:focus + .check__box {
-  background-color: var(--accent-color);
-  background-image: url(..images/icon/iconcheck.svg);
-}
-
-.tema-modal {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-}
-
-.name__modals {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: var(--main-text-color);
-  padding: 4px;
-}
-
-.name-meeting {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-}
-*/
 .menu__btn {
   display: inline-flex;
   margin: 0;

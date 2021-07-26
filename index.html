@@ -106,13 +106,16 @@
            <button type="button" class="button" data-modal-open >Заказать услугу</button>
       
       <div class="backdrop is-hidden" data-modal >
-       <div class="modal"  >
+       <div class="modal" >
       
-       <button  class=" button-modals" data-modal-close >  <svg class="icon-advantages-butten "><use href="./images/sprite.svg.svg#icon-Vector2" ></svg> </use> </button>
+       <button  class=" button-modals" data-modal-close >
+           <svg class="icon-advantages-butten ">
+              <use href="./images/sprite.svg.svg#icon-Vector2" > </use>
+            </svg>
+             </button>
        <p class="tema-modal">Оставьте свои данные, мы вам перезвоним</p>
        <form class="form-modal" autocomplete="on">
          
-            
             <label  class="name-modals" >Имя 
                <span class="form-field">
             <input type="text" class="fiel-input"  name="name"  placeholder=" " minlength="2" pattern="[A-Za-zА-Яа-яЁё]+" title="Имя должно  содержать символы латиницы или кирилицы" required> 
@@ -131,7 +134,6 @@
                </span>
             </label>
                   
-         
             <label  class="name-modals">Почта
                <span  class="form-field">
             <input type="email" class="fiel-input"  name="email"  placeholder=" " patter="[A-Za-zА ][0-9]{3}" required> 
@@ -151,10 +153,9 @@
                <label class="checkbox-label" for="check">Соглашаюсь с рассылкой и принимаю &nbsp; <a href="#">Условия договора</a></label>
                <svg class="check__box" >
                   <use href="./images/sprite.svg.svg#iconchecks"></use>
-               </svg>         
+               </svg>  
+               <button class="button-form" type="submit">Отправить</button>       
      
-         <button class="button-forms" type="submit">Отправить</button>
-
       </form>
       </div>
      
@@ -185,7 +186,8 @@
                   </svg>
                </div>
                   <h3 class="title">Пунктуальность</h3>
-               <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой. </p></li>
+               <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой. </p>
+            </li>
          
            
                <li class="item"> 
@@ -194,9 +196,10 @@
                      <use href="./images/sprite.svg.svg#icon-3"></use>
                   </svg>
                </div>
-
                   <h3 class="title">Планирование</h3>
-               <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает. </p></li>
+               <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает. </p>
+            </li>
+
                <li class="item">
                   <div class="advantages">
                   <svg class="icon__advantages">
@@ -204,10 +207,12 @@
                   </svg>
                </div>
                   <h3 class="title">Современные технологии </h3>
-               <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий. </p></li>      
+               <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий. </p>
+            </li>      
             </ul>
          </div>
          </section>
+
          <section class="section team"> 
             <div class="conteiner">
             <h2 class="section-title">Чем мы занимаемся </h2>
@@ -225,12 +230,14 @@
             <li class="grid__item"><img src="./images/box2.jpg" alt="Телефон в руке" width="370" height="294">
                <div class="grid__text"><p>Мобильные приложения</p></div>
             </li>
+
             <li class="grid__item"><img src="./images/box3.jpg" alt="Цветовая гама на планшете" width="370" height="294">
                <div class="grid__text"><p>Дизайнерские решения</p></div>
             </li>
             </ul>
          </div>
          </section>  
+
          <section class="section dark-bg-section">
             <div class="conteiner ">
             <h2 class="section-title-comands">Наша команда</h2> 
