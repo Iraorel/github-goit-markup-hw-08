@@ -14,7 +14,7 @@
          <div class=" conteiner header__conteiner">
    <nav class="main-nav"> 
         <a href="/" class="logo header__logo link ">
-        WebStudio
+       <span class="web-logo">Web</span>Studio
       </a>
       
       <ul class =" site-nav list menu--item " >
@@ -22,7 +22,22 @@
          <li class="item"> <a href="./portfolio.html" class="link menu__link ">Портфолио</a></li>
          <li class="item"> <a href="#contact-us" class="link menu__link  ">Контакты</a></li>
       </ul>
+
+      <a class="link contacts-link" href="mailto:info@devstudio.com">   
+          <svg class="icon" >
+         <use href="./images/sprite.svg.svg#icon-envelope"></use>
+         </svg>
+
+        info@devstudio.com</a>
+
+      <a class="link contacts-link"  href="tel:+380961111111"> 
+         <svg class="icon">
+         <use href="./images/sprite.svg.svg#icon-Vector"></use>
+      </svg>
+      +380961111111</a>
    
+      </nav>
+   <!--
      <div class="header__contacts-wrap"> 
       <ul class="auth-nav list">
       <li class="item contacts" ><a  class="link contacts-link" href="mailto:info@devstudio.com">
@@ -38,13 +53,20 @@
          +380961111111</a></li>
        </ul>
       </div>
-
-      <button type="button" class="menu__btn is-open" data-menu-button aria-controls="mobile-menu" >
+-->
+      <button 
+      type="button"
+       class="menu__btn is-open"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-menu-button 
+        >
          <svg  width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="menu-icon-menu" href="./images/sprite.svg.svg#icon-menu"></use> 
-           <use class="menu-icon-close" href="./images/sprite.svg.svg#icon-close"></use>
+            <use class="menu-icon-close" href="./images/sprite.svg.svg#icon-close"></use> 
+           <use class="menu-icon-menu" href="./images/sprite.svg.svg#icon-menu"></use>
          </svg>   
       </button>
+         </div>
    
         <div class="mobile-menu" id="mobile-menu" data-menu>
            <div class="mobile-contacts">
@@ -65,7 +87,7 @@
                <div class="mobile-social">
            <ul class="mobile-menu__social">
             <li class="menu-icons__mobile list">
-               <a href="" class="social-icons-menu line" target="_blank" rel="" >
+               <a href="" class="social-icons-menu line" target="_blank" rel="noopener noreferrer" >
                   Instagram
                </a>
             </li>
@@ -89,10 +111,6 @@
          </div>
                 
          </div>
-
-
-      </nav>
-      
    </div>
      </header>
 
