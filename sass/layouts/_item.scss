@@ -1,9 +1,10 @@
 .item {
 
+
   
 
   @media screen and(min-width:480px) {
-    width: 450px;
+    /*width: 450px;*/
  
     margin-bottom: 30px;
  
@@ -15,5 +16,7 @@
   }
 
   @media screen and(min-width:1200px) {
+    width: auto;
+    margin-left: 50px;
   }
 }

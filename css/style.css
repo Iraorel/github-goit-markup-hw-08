@@ -269,6 +269,13 @@ img {
   transition: color var(--animation), backgraund-color var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.button {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 30px;
+}
+
 .button-modals {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1530,8 +1537,15 @@ img {
 
 @media screen and (min-width: 480px) {
   .item {
-    width: 450px;
+    /*width: 450px;*/
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item {
+    width: auto;
+    margin-left: 50px;
   }
 }
 
