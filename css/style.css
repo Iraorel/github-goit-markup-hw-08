@@ -199,6 +199,7 @@ p {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  padding-right: 0;
   list-style: none;
 }
 
@@ -231,29 +232,24 @@ img {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  /*background: chartreuse;*/
 }
 
 @media screen and (min-width: 480px) {
   .conteiner {
-    width: 480;
-    margin-left: auto;
-    margin-right: auto;
-    /* background: cornflowerblue;*/
+    width: 480px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .conteiner {
     width: 768px;
-    /*background: crimson;*/
   }
 }
 
 @media screen and (min-width: 1200px) {
   .conteiner {
     width: 1200px;
-    /* background: darkgreen;*/
   }
 }
 
@@ -790,14 +786,6 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-@media screen and (min-width: 768px) {
-  .grid {
-    margin-left: 45px;
-  }
 }
 
 .grid__item {
@@ -819,6 +807,10 @@ img {
     --grid-item: 3;
     flex-basis: auto;
   }
+}
+
+.grid__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .grid__text {
@@ -1037,8 +1029,6 @@ img {
   .advantages {
     display: block;
     width: 450px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -1272,7 +1262,16 @@ img {
   color: var(--main-text-color);
 }
 
-@media screen and (min-width: 480px) {
+.team-grup {
+  /*
+  @media screen  and(min-width:1200px){
+    display: flex;
+    flex-wrap: wrap;
+       
+  }*/
+}
+
+@media screen and (max-width: 1199px) {
   .team-grup {
     display: none;
   }
@@ -1456,8 +1455,9 @@ img {
   .desc {
     display: block;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    /*
+      margin-left: auto;
+      margin-right: auto;*/
   }
 }
 
@@ -1510,8 +1510,26 @@ img {
 
 @media screen and (min-width: 480px) {
   .item {
-    padding-left: 15px;
+    width: 450px;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .text {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .text {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
