@@ -71,14 +71,34 @@
   .adress {
     padding-top: 9px;
     padding-bottom: 9px;
+
   }
   
   .mail {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding: 20px;
     margin-right: 8px;
     background-color: var(--dark-bg-color);
+
+    @media screen and (min-width:768px) {
+      width: 450px;
+      
+    }
+    @media screen and (min-width:1200px) {
+      width: 358px;
+      
+    }
+
+
+
+
+  }
+
+
+  .adress-text{
+    color: white;
+
   }
