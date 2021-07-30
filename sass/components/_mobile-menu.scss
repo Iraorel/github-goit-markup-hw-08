@@ -2,6 +2,7 @@
     display: inline-flex;
     margin: 0;
     padding: 0;
+    line-height: 0;
   /*  width: 40px;
     height: 40px;   */
     background-color: transparent;
@@ -11,6 +12,24 @@
     @media screen  and (min-width:768px) {
         display: none;
     }
+}
+
+.menu-btn-close{
+
+    display: inline-flex;
+  
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+.mobile-menu__close-btn{
+    position: inherit;
 }
 
 .menu__btn .menu-icon-close {
@@ -29,12 +48,19 @@
 
 
 .mobile-menu{
-  display: none;
-
+  /*display: none;*/
+position: fixed;
+z-index: 100;
+left: 0;
+top: 0;
+width: 100vw;
+height: 100vh;
+background: #2196F3;
+/*
     background-color: #ffffff;
     padding: 40px;
     text-align: center;
-    font-size: 40px;
+    font-size: 40px; 
 
     &.is-open {
         display: block;
@@ -46,7 +72,7 @@
        top: 100%;
        left: 0;
        width: 100vh; 
-    }
+    }*/
 }
 
 

@@ -56,20 +56,27 @@
    </nav>
       <button 
       type="button"
-       class="menu__btn is-open"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-        data-menu-button  >
+      class="menu__btn is-open"
+       aria-expanded="false"
+       aria-controls="mobile-menu"
+       data-menu-button  >
 
-         <svg  width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="menu-icon-close" href="./images/sprite.svg.svg#icon-close"></use> 
-           <use class="menu-icon-menu" href="./images/sprite.svg.svg#icon-menu"></use>
+         <svg class="menu-icon-menu" width="40" height="40" aria-label="Переключатель мобильного меню"> 
+           <use  href="./images/sprite.svg.svg#icon-menu"></use>
          </svg>   
       </button>
          </div>
    
         <div class="mobile-menu" id="mobile-menu" data-menu>
            <div class="mobile-contacts">
+            <button 
+            type="button"
+             class="menu__btn-close mobile-menu__close-btn"   >
+      
+               <svg  class="menu-icon-close"  width="40" height="40" aria-label="Переключатель мобильного меню">
+                  <use href="./images/sprite.svg.svg#icon-close"></use> 
+               </svg>   
+            </button>
             <ul class =" site-nav__mobile list " >
                <li class="item"> <a href="./index.html" class="link menu__link  ">Cтудия</a></li>
                <li class="item"> <a href="./portfolio.html" class="link menu__link ">Портфолио</a></li>
