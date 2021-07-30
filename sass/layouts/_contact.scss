@@ -21,3 +21,15 @@
   -webkit-transition: fill var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.contacts.item{
+  height: 21px;
+  margin-top: 8px;
+
+  @media screen and (min-width:1200px){
+    height: auto;
+    margin-top: auto;
+    
+  }
+
+}
