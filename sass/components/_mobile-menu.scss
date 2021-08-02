@@ -48,7 +48,7 @@
 
 
 .mobile-menu{
- /* display: none;*/
+ 
 position: fixed;
 z-index: 100;
 left: 0;
@@ -56,6 +56,11 @@ top: 0;
 width: 100vw;
 height: 100vh;
 background: #2196F3;
+
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+transition: opacity 500ms linear, visibility 500ms linear;
 /* 
     background-color: #ffffff;
     padding: 40px;
@@ -75,16 +80,27 @@ background: #2196F3;
     }*/
 }
 
+.mobile-menu.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
 
 .mobile-menu__close-btn{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 15px;
 }
 
 .mobile-menu__conteiner{
  position: relative;
+ padding-top: 48px;
+ padding-left: 40px;
+
+
 }
+
+
 /*
 .mobile-menu__icon {
     width: 24px;
