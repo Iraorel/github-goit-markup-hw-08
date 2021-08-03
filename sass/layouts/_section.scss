@@ -2,3 +2,12 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
+
+  .section__advantages{
+    padding-left: 15px;
+
+    @media screen  and(min-width: 768px){
+     flex-basis: 50%;
+      
+    }
+  }
