@@ -277,15 +277,15 @@ img {
 }
 
 .button-modals {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-self: center;
-  margin-top: 3px;
+  top: 8px;
   margin-left: 450px;
-  margin-right: 5px;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -485,6 +485,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--dark-bg-text-color);
+  text-transform: uppercase;
 }
 
 .section-title {
@@ -545,7 +546,8 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 530px;
+  width: 450px;
+  height: 609px;
   background-color: var(--dark-bg-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px, 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -553,9 +555,18 @@ img {
   padding: 40px;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: relative;
+    width: 528px;
+    height: 581px;
+  }
+}
+
 .icon-advantages-butten {
   width: 11px;
   height: 11px;
+  align-self: center;
 }
 
 .form-modal {
@@ -655,6 +666,10 @@ img {
   border: 1px solid #212121;
   cursor: pointer;
   margin-right: 7px;
+}
+
+.check__box {
+  height: 30px;
 }
 
 .menu__btn {
@@ -923,6 +938,12 @@ img {
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 80px;
+}
+
+@media screen and (min-width: 480px) {
+  .header__conteiner {
+    height: 60px;
+  }
 }
 
 .header__logo {

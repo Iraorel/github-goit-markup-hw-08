@@ -25,15 +25,16 @@ margin-top: 50px;
 }
 
 .button-modals {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-self: center;
-  margin-top: 3px;
+  top: 8px;
   margin-left: 450px;
-  margin-right: 5px;
+ 
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
