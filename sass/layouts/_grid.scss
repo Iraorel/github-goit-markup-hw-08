@@ -68,22 +68,26 @@
  
     
     flex-basis: calc((100%- (30px * var(--grid-item))) / var(--grid-item));
-    --grid-item: 9;
-    
+    --grid-item: 3;
+    margin-left: 30px;
   }
 
+  .grid-item-portfolio::not(::last-child){
+
+    @media screen and (min-width: 1200px) {
+      margin-left: -30px;
+  }
+}
    /* margin-left: 30px;
     margin-top: 30px;
 
 
 
-}
-}
-/*
-.grid-item-portfolio:first-child{
-  @media screen and(min-width:1200px) {
-    
-  margin-right: -30px;
-}
 }*/
+}
+.grid-item-portfolio:last-child{
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    
+  flex-basis: 100%;
+}
 }

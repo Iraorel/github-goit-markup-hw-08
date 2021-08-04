@@ -273,7 +273,7 @@ img {
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .button-modals {
@@ -851,14 +851,6 @@ img {
 
 
 
-}
-}
-/*
-.grid-item-portfolio:first-child{
-  @media screen and(min-width:1200px) {
-    
-  margin-right: -30px;
-}
 }*/
 }
 
@@ -878,7 +870,20 @@ img {
 @media screen and (min-width: 1200px) {
   .grid-item-portfolio {
     flex-basis: calc((100%- (30px * var(--grid-item))) / var(--grid-item));
-    --grid-item: 9;
+    --grid-item: 3;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid-item-portfolio .grid-item-portfolio::not(::last-child) {
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .grid-item-portfolio:last-child {
+    flex-basis: 100%;
   }
 }
 
@@ -1123,6 +1128,12 @@ img {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 400px;
+  }
+}
+
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px), screen and (min-resolution: 192dpi) and (min-width: 280px), screen and (min-resolution: 2dppx) and (min-width: 280px) {
   .hero {
     background-image: url(../images/mobile/heder-mobile@2x.jpg);
@@ -1132,6 +1143,7 @@ img {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url(../images/tablet/header-tablet.jpg);
+    height: 400px;
   }
 }
 
@@ -1144,6 +1156,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: url(../images/desktop/heder-desktop.jpg);
+    height: 600px;
   }
 }
 
@@ -1259,7 +1272,7 @@ img {
   -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 50px;
-  padding: 40px;
+  padding-top: 40px;
 }
 
 .portfolio__member {
