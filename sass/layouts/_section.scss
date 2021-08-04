@@ -11,3 +11,26 @@
       
     }
   }
+
+  .dark-bg-section{
+   
+    background-color: var(--light-bg-color) ;
+
+
+    @media screen and (min-width: 480px){
+      height: 2761px;
+      padding-top: 60px;
+      
+    }
+
+    @media screen and (min-width: 768px){
+      height: 1285px;
+      
+      
+    }
+
+    @media screen and (min-width: 1200px){
+      height: 708px;
+      padding-top: 94px;
+    }
+  }

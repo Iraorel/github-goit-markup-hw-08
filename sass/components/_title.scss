@@ -4,7 +4,7 @@
   letter-spacing: 00.03em;
   text-transform: uppercase;
   color: var(--title-color);
-  margin-bottom: 50px;
+ 
 
   @media screen and(min-width:480px) {
     margin-left: auto;
@@ -12,6 +12,9 @@
   }
 
   @media screen and(min-width:1200px) {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
 }
 
@@ -55,9 +58,10 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
     font-size: 36px;
   }
 }
@@ -69,4 +73,5 @@
   color: var(--dark-bg-text-color);
   margin-bottom: 20px;
   margin-top: 50px;
+  text-transform: uppercase;
 }

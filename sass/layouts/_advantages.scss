@@ -12,7 +12,7 @@
   height: 120px;
   background: var(--light-bg-color);
   border-radius: 4px;
-  margin-bottom: 30px;
+ 
 
   @media screen and(min-width:480px) {
     display: block;
@@ -33,6 +33,7 @@
 .icon__advantages {
   width: 65px;
   height: 70px;
+
 
   @media screen and(min-width:480px) {
     align-items: center;

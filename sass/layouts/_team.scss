@@ -6,6 +6,8 @@
     
   }
 .team-grup{
+  padding-top: 0px;
+
   @media screen  and(max-width:1199px){
   display:none ;
       
@@ -61,7 +63,7 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
-    margin-bottom: 30px;
+    margin-bottom: 16px;
   }
 
   .team-item {
