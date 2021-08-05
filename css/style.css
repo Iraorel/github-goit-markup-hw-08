@@ -285,11 +285,17 @@ img {
   -ms-flex-align: center;
   align-self: center;
   top: 8px;
-  margin-left: 450px;
+  margin-left: 370px;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+
+@media screen and (min-width: 1200px) {
+  .button-modals {
+    margin-left: 450px;
+  }
 }
 
 .button-form {
@@ -375,6 +381,12 @@ img {
   fill: var(--accent-color);
 }
 
+.footer .social-icons-item:hover, .footer .social-icons-item:focus {
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  cursor: default;
+}
+
 .social-icons-item .icon {
   width: 20px;
   height: 20px;
@@ -412,6 +424,17 @@ img {
   transition: var(--animation);
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+}
+
+.footer .social-icons-link-join:hover .icon,
+.footer .social-icons-link-join:focus .icon {
+  fill: var(--dark-bg-text-color);
+  -webkit-transition: var(--animation);
+  transition: var(--animation);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
 }
 
 .icon-mail {
@@ -427,6 +450,12 @@ img {
   width: 47px;
   height: 20px;
   fill: var(--dark-bg-text-color);
+}
+
+@media screen and (min-width: 480px) {
+  .footer .icon-mail {
+    right: 10px;
+  }
 }
 
 .logo {
@@ -664,8 +693,7 @@ img {
 
 .checkbox-label {
   display: flex;
-  align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   color: #757575;
 }
 
@@ -677,6 +705,13 @@ img {
   border: 1px solid #212121;
   cursor: pointer;
   margin-right: 7px;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-size: 14px;
+    align-items: center;
+  }
 }
 
 .check__box {
@@ -1017,11 +1052,10 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer {
-    width: 1600px;
     height: 225px;
     display: inline-flex;
-    justify-content: space-between;
     align-items: center;
+    text-align: left;
   }
 }
 
@@ -1092,7 +1126,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .subscribe-us .mail {
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.03);
@@ -1101,7 +1135,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .subscribe-us .mail:focus {
     border: var(--accent-color);
   }
@@ -1200,6 +1234,7 @@ img {
 .icon__advantages {
   width: 65px;
   height: 70px;
+  margin-top: 25px;
 }
 
 @media screen and (min-width: 480px) {
@@ -1747,7 +1782,15 @@ img {
   line-height: 1.14;
   letter-spacing: 00.03em;
   color: var(--dark-bg-text-color);
+  margin-top: 20px;
   margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 480px) {

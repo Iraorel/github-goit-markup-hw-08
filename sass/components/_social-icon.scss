@@ -24,6 +24,15 @@
     fill: var(--accent-color);
   }
 }
+
+.footer .social-icons-item{
+  &:hover,
+  &:focus  {
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    cursor: default;
+  }
+}
 .social-icons-item .icon {
   width: 20px;
   height: 20px;
@@ -36,6 +45,7 @@
 
 .social-icons-item {
   margin-bottom: 30px;
+ 
 }
 .social-icons-link-join {
   display: -webkit-box;
@@ -59,7 +69,23 @@
     transition: var(--animation);
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: default;
   }
+
+}
+
+
+.footer .social-icons-link-join{
+  &:hover .icon,
+  &:focus .icon {
+    fill: var(--dark-bg-text-color);
+    -webkit-transition: var(--animation);
+    transition: var(--animation);
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: default;
+  }
+
 }
 .icon-mail {
   position: fixed;
@@ -74,4 +100,11 @@
   width: 47px;
   height: 20px;
   fill: var(--dark-bg-text-color);
+}
+
+.footer .icon-mail{
+  @media screen and (min-width: 480px) {
+    right: 10px;
+  }
+
 }
