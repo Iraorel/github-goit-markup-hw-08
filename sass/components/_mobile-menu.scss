@@ -77,8 +77,6 @@ transition: opacity 500ms linear, visibility 500ms linear;
 
 .site-nav__mobile{
    height: 48px;
-   margin-left: 40px;
-   margin-top: 48px;
    font-size: 40px; 
    line-height: 1.17;
    letter-spacing: 0.02em;
@@ -88,7 +86,8 @@ transition: opacity 500ms linear, visibility 500ms linear;
 
 
 .mobile-auth-nav{
-    margin-top: 562px;
+    margin-top: 362px;
+    margin-left: -40px;
 }
 
 
@@ -121,6 +120,7 @@ transition: opacity 500ms linear, visibility 500ms linear;
 
 .mobile-social{
     padding-top: 64px;
+    margin-left: -40px;
 }
 .mobile-menu__social{
    

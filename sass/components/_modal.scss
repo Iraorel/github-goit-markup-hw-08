@@ -129,8 +129,8 @@
 }
 .checkbox-label {
   display: flex;
-  
-  font-size: 12px;
+  height: 14px;
+  font-size: 11.5px;
   color: #757575;
 
   &::before {
@@ -154,3 +154,4 @@
 .check__box{
  height: 30px;
 }
+

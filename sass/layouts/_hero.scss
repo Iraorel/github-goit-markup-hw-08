@@ -13,6 +13,7 @@
   background-image: url(../images/mobile/heder-mobile.jpg);
   margin-left: auto;
   margin-right: auto;
+  background: rgba(47, 48, 58, 0.4);
   background-repeat: no-repeat;
 
   @media screen and (max-width: 480px){
@@ -45,6 +46,8 @@
  screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
     background-image: url(../images/tablet/header-teblet@2x.jpg);
+    height: 400px;
+  
   }
 }
 
