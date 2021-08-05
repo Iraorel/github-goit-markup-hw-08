@@ -19,14 +19,22 @@
         -ms-flex-pack: justify;
           
      height: 80px;
-     width: 1600px;
-     border-bottom: 1px solid var(--border);
+     /*width: 1600px;
+     border-bottom: 1px solid var(--border);*/
  
 
      @media screen and (min-width: 480px) {
        width: auto;
        height: 60px;
        justify-content: space-between;
+     }
+
+     @media screen and (min-width: 1200px) {
+     
+       width: auto;
+       
+
+       
      }
   }
   
@@ -52,4 +60,8 @@
     }
 
 
-   
+   .portfolio-conteiner{
+     width: 1600px;
+     border-bottom: 1px solid var(--border);
+
+   }

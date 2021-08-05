@@ -1010,8 +1010,8 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   height: 80px;
-  width: 1600px;
-  border-bottom: 1px solid var(--border);
+  /*width: 1600px;
+     border-bottom: 1px solid var(--border);*/
 }
 
 @media screen and (min-width: 480px) {
@@ -1019,6 +1019,12 @@ img {
     width: auto;
     height: 60px;
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__conteiner {
+    width: auto;
   }
 }
 
@@ -1036,6 +1042,11 @@ img {
   .header__contacts-wrap {
     display: flex;
   }
+}
+
+.portfolio-conteiner {
+  width: 1600px;
+  border-bottom: 1px solid var(--border);
 }
 
 .footer {
@@ -1610,7 +1621,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .main-nav {
-    margin-left: 40px;
+    width: 1200px;
   }
 }
 
