@@ -32,6 +32,11 @@
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-between;
+
+        @media screen and (min-width: 1200px) {
+          margin-left: 40px;
+          
+        }
   }
 
   .auth-nav {

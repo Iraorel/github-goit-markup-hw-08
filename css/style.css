@@ -1386,6 +1386,7 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 1s ease-out;
 }
 
 .card:hover .card-thumb::before {
@@ -1605,6 +1606,12 @@ img {
   align-items: center;
   -ms-flex-pack: distribute;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    margin-left: 40px;
+  }
 }
 
 .auth-nav {
