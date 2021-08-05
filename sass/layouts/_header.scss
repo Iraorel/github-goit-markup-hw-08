@@ -17,20 +17,24 @@
             align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+          
      height: 80px;
+     width: 1600px;
+     border-bottom: 1px solid var(--border);
+ 
 
      @media screen and (min-width: 480px) {
+       width: auto;
        height: 60px;
+       justify-content: space-between;
      }
   }
   
   .header__logo {
     margin-right: 50px;
   }
-  .header-portfolio {
-    border-bottom: 1px solid var(--main-text-color);
-  }
+
+  
   
   
  .header__contacts-wrap {
@@ -46,3 +50,6 @@
     
   }
     }
+
+
+   
