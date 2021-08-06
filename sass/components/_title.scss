@@ -9,6 +9,8 @@
   @media screen and(min-width:480px) {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
   }
 
   @media screen and(min-width:1200px) {
@@ -18,11 +20,11 @@
   }
 }
 
-
+/*
 .page-title {
   height: 120px;
   margin: auto;
-}
+}*/
 
 
 .comands-title {
@@ -36,14 +38,21 @@
   -ms-flex-align: center;
   align-items: center;
 }
+
+
 .page-title {
-  @include font(44px, 900, 1.36);
+  @include font(26px, 900, 1.62);
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--dark-bg-text-color);
   text-transform: uppercase;
 
+  @media  screen and (min-width: 768px) {
+    @include font(44px, 900, 1.36)
+  }
 }
+
+
 
 .section-title {
   @include font(36px, 700, 1.17);
@@ -52,6 +61,7 @@
   color: var(--title-color);
   margin-bottom: 50px;
 }
+
 .section-title-comands {
   @include font(28px, 700, 1.17);
 

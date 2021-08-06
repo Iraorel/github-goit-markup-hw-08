@@ -1,13 +1,20 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+    @media screen and (min-width: 1200px){
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
 
   .section__advantages{
-    padding-left: 15px;
+   /* padding-left: 15px;*/
 
     @media screen  and(min-width: 768px){
-     flex-basis: 50%;
+     flex-basis: calc((100% - 60px) /2);
+     margin-left: 30px;
       
     }
   }
