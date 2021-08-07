@@ -765,12 +765,16 @@ img {
 .mob-menu {
   position: fixed;
   background-color: #fff;
+  z-index: 100;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
   padding-top: 48px;
   padding-bottom: 48px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   /*
   opacity: 0;
 visibility: hidden;
@@ -785,20 +789,21 @@ transition: opacity 500ms linear, visibility 500ms linear;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: opacity 500ms linear, visibility 500ms linear;
 }
 
-.mob-menu .mob-menu.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+.mob-menu .mob-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
-/*
-.mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+.mob-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
-*/
+
 .mob-menu-list__item:not(:last-child) {
   margin-bottom: 36px;
 }

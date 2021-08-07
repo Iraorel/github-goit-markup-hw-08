@@ -39,23 +39,22 @@
     </ul>
    </div> 
 </nav>
-   <button 
-   type="button"
-   class="menu__btn is-open"
-    aria-expanded="false"
-    aria-controls="mobile-menu"
-    data-menu-open  >
+<button 
+type="button"
+class="menu__btn is-open"
+ aria-expanded="false"
+ aria-controls="mobile-menu"
+ data-menu-open  >
 
-      <svg class="menu-icon-menu" width="40" height="40" aria-label="Переключатель мобильного меню"> 
-        <use  href="./images/sprite.svg.svg#icon-menu"></use>
-      </svg>   
-   </button>
-      </div>
+   <svg class="menu-icon-menu" width="40" height="40" aria-label="Переключатель мобильного меню"> 
+     <use  href="./images/sprite.svg.svg#icon-menu"></use>
+   </svg>   
+</button>
+   </div>
 
-      
-     <div class="mobile-menu" id="mobile-menu" data-menu>
-      <div class="container mobile-menu__conteiner">
-         <button 
+   <!--мобільне меню-->
+   <div class="mob-menu  is-hidden" data-menu>
+      <button 
          type="button"
           class="menu__btn-close mobile-menu__close-btn"  data-menu-close >
    
@@ -63,54 +62,48 @@
                <use href="./images/sprite.svg.svg#icon-close"></use> 
             </svg>   
          </button>
-         <div class=" mobile-site-nav">
-         <ul class =" site-nav__mobile list " >
-            <li class="item"> <a href="./index.html" class="link menu__link  ">Cтудия</a></li>
-            <li class="item"> <a href="./portfolio.html" class="link menu__link ">Портфолио</a></li>
-            <li class="item"> <a href="#contact-us" class="link menu__link  ">Контакты</a></li>
-         </ul>
-        </div>
-        <div class=" mobile-auth-nav"> 
-            <ul class="auth-nav__mobile list">
-
-            <li class="item contacts-mobile-tel"><a class="link contacts-link"  href="tel:+380961111111">
-                  +380961111111</a></li>  
-            <li class="item contacts-mobil-mail" ><a  class="link contacts-link" href="mailto:info@devstudio.com">
-                   info@devstudio.com</a></li>
-            
-             </ul>
-            </div>
-           
-            <div class="mobile-social">
-        <ul class="mobile-menu__social">
-         <li class="menu-icons__mobile list">
-            <a href="" class="social-icons-menu line link" target="_blank" rel="noopener noreferrer" >
-               Instagram
-            </a>
+      <div class="conteiner">
+         
+      <ul class="mob-menu-list list">
+         <li class="mob-menu-list__item">
+            <a href="" class="mob-menu-list__link">Студия</a>
          </li>
-         <li class="menu-icons__mobile list">
-            <a href="" class="social-icons-menu line link"  target="_blank" rel="noopener noreferrer">
-               Twitter 
-            </a>
+         <li class="mob-menu-list__item">
+            <a href="" class="mob-menu-list__link">Портфолио</a>
          </li>
-         <li class="menu-icons__mobile list">
-            <a href="" class="social-icons-menu line link"  target="_blank" rel="noopener noreferrer">
-               Facebook
-            </a>
+         <li class="mob-menu-list__item">
+            <a href="" class="mob-menu-list__link">Контакты</a>
          </li>
-         <li class="menu-icons__mobile list">
-            <a href="" class="social-icons-menu line link"  target="_blank" rel="noopener noreferrer">
-                linkedin
-            </a>
+   
+      </ul>
+      <div class="menu-bottom">
+      <ul class="mob-menu-contacts list">
+         <li class="mob-menu-contacts__item">
+            <a href="" class="mob-menu-contacts__link contacts-link">+38 096 111 11 11</a>
          </li>
-
-        </ul>
-        </div>
-    
-      </div>
+         <li class="mob-menu-contacts__item">
+            <a href="" class="mob-menu-contacts__link">info@devstudio.com</a>
+         </li>
+      </ul>
+      <ul class="mob-menu-soc list">
+         <li class="mob-menu-soc__item">
+            <a href="" class="mob-menu-soc__link line">Instagram</a>
+         </li>
+         <li class="mob-menu-soc__item">
+            <a href="" class="mob-menu-soc__link line">Twitter</a>
+         </li>
+         <li class="mob-menu-soc__item">
+            <a href="" class="mob-menu-soc__link line">Facebook</a>
+         </li>
+         <li class="mob-menu-soc__item">
+            <a href="" class="mob-menu-soc__link line">LinkedIn</a>
+         </li>
+      </ul>
    </div>
-      
-</div>
+   </div>
+
+   </div>
+
   </header>
 
 </div>
