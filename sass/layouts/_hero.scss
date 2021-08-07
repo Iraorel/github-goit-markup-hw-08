@@ -10,14 +10,15 @@
   align-items: center;
   max-width: 1600px;
   
-  background-image: url(../images/heder/header-mob.jpg);
+
   margin-left: auto;
   margin-right: auto;
   background: rgba(47, 48, 58, 0.4);
   background-repeat: no-repeat;
 
-  @media screen and (max-width: 480px){
+  @media screen and (min-width: 280px){
     height: 400px;
+    background-image:  url(../images/mobile/heder-mobile.jpg);
   }
 
 
@@ -72,7 +73,7 @@
   padding-bottom: 118px;
 
   @media screen and (min-width: 480px) {
-    width: 390px;
+    width: 393px;
     
   }
 
