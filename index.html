@@ -13,32 +13,32 @@
       
      <div class="conteiner header__conteiner">
    <nav class="main-nav"> 
-        <a href="/" class="logo header__logo link ">
-       <span class="web-logo">Web</span>Studio
-      </a>
-      
-      <ul class =" site-nav list menu--item " >
-         <li class="item-mob"> <a href="./index.html" class="link menu__link-mob">Cтудия</a></li>
-         <li class="item-mob"> <a href="./portfolio.html" class="link menu__link-mob ">Портфолио</a></li>
-         <li class="item-mob"> <a href="#contact-us" class="link menu__link-mob  ">Контакты</a></li>
-      </ul>
-
-   
-     <!--<div class="header__contacts-wrap"> -->
+      <a href="/" class="logo header__logo link ">
+         <span class="web-logo">Web</span>Studio
+        </a>
         
-      <ul class="auth-nav list">
-      <li class="item contacts" ><a  class="link contacts-link" href="mailto:info@devstudio.com">
-         <svg class="icon" >
-            <use href="./images/sprite.svg.svg#icon-envelope"></use>
-         </svg>
-
-         info@devstudio.com</a></li>
-      <li class="item contacts"><a class="link contacts-link"  href="tel:+380961111111">
-         <svg class="icon">
-            <use href="./images/sprite.svg.svg#icon-Vector"></use>
-         </svg>
-         +380961111111</a></li>
-       </ul>
+        <ul class =" site-nav list menu--item " >
+           <li class="item"> <a href="./index.html" class="link menu__link  ">Cтудия</a></li>
+           <li class="item"> <a href="./portfolio.html" class="link menu__link ">Портфолио</a></li>
+           <li class="item"> <a href="#contact-us" class="link menu__link  ">Контакты</a></li>
+        </ul>
+     
+     
+       <div class="header__contacts-wrap"> 
+        <ul class="auth-nav list">
+        <li class="item contacts" ><a  class="link contacts-link" href="mailto:info@devstudio.com">
+           <svg class="icon" >
+              <use href="./images/sprite.svg.svg#icon-envelope"></use>
+           </svg>
+     
+           info@devstudio.com</a></li>
+        <li class="item contacts"><a class="link contacts-link"  href="tel:+380961111111">
+           <svg class="icon">
+              <use href="./images/sprite.svg.svg#icon-Vector"></use>
+           </svg>
+           +380961111111</a></li>
+         </ul>
+        </div> 
       
    </nav>
       <button 
@@ -53,8 +53,60 @@
          </svg>   
       </button>
          </div>
-
+     
+         <!--мобільне меню-->
+         <div class="mob-menu is-hidden" data-menu>
+            <button 
+               type="button"
+                class="menu__btn-close mobile-menu__close-btn"  data-menu-close >
          
+                  <svg  class="menu-icon-close"  width="40" height="40" aria-label="Переключатель мобильного меню">
+                     <use href="./images/sprite.svg.svg#icon-close"></use> 
+                  </svg>   
+               </button>
+            <div class="conteiner">
+               
+            <ul class="mob-menu-list list">
+               <li class="mob-menu-list__item">
+                  <a href="" class="mob-menu-list__link">Студия</a>
+               </li>
+               <li class="mob-menu-list__item">
+                  <a href="" class="mob-menu-list__link">Портфолио</a>
+               </li>
+               <li class="mob-menu-list__item">
+                  <a href="" class="mob-menu-list__link">Контакты</a>
+               </li>
+         
+            </ul>
+            <div class="menu-bottom">
+            <ul class="mob-menu-contacts list">
+               <li class="mob-menu-contacts__item">
+                  <a href="" class="mob-menu-contacts__link">+38 096 111 11 11</a>
+               </li>
+               <li class="mob-menu-contacts__item">
+                  <a href="" class="mob-menu-contacts__link">info@devstudio.com</a>
+               </li>
+            </ul>
+            <ul class="mob-menu-soc list">
+               <li class="mob-menu-soc__item">
+                  <a href="" class="mob-menu-soc__link">Instagram</a>
+               </li>
+               <li class="mob-menu-soc__item">
+                  <a href="" class="mob-menu-soc__link">Twitter</a>
+               </li>
+               <li class="mob-menu-soc__item">
+                  <a href="" class="mob-menu-soc__link">Facebook</a>
+               </li>
+               <li class="mob-menu-soc__item">
+                  <a href="" class="mob-menu-soc__link">LinkedIn</a>
+               </li>
+            </ul>
+         </div>
+         </div>
+
+         </div>
+
+         <!--
         <div class="mobile-menu" id="mobile-menu" data-menu>
          <div class=" conteiner mobile-menu__conteiner">
             <button 
@@ -110,10 +162,9 @@
          </div>
       </div>
          
-   </div>
+   </div>-->
      </header>
 
-</div>
      <main>
       
        <!-- Герой -->
