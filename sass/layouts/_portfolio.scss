@@ -70,3 +70,13 @@
     }
      
   }
+
+  .portfolio-text.button-portfolio{
+    @include font(16px, 500, 1.63px);
+    letter-spacing: 000.03em;
+    color: var(--title-color);
+  }
+
+  .link-portfolio{
+    padding-bottom: 30px;
+  }

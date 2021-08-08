@@ -1,14 +1,25 @@
 .card-content {
     display: inline-block;
-    width: 370px;
+    width: 450px;
     height: 110px;
     padding: 20px 24px;
     background: #ffffff;
     border: 1px solid #eeeeee;
     text-align: none;
+
+    @media screen  and(min-width: 768px){
+      width: 354px;
+    }
+
+    @media screen  and(min-width: 1200px){
+      width: 370px;
+
+    }
+
   }
   .card {
     position: relative;
+    padding-bottom: 30px;
   }
   .card-text {
     margin-top: 5px;
@@ -20,8 +31,17 @@
   
   .card-thumb {
     position: relative;
-    width: 370px;
+    width: 450px;
     overflow: hidden;
+
+    @media screen  and(min-width: 768px){
+      width: 354px;
+    }
+
+    @media screen  and(min-width: 1200px){
+      width: 370px;
+
+    }
   }
   
   .card-thumb:hover::before {
@@ -36,11 +56,23 @@
     display: flex;
     position: absolute;
     top: 0;
-    right: 0;
-    width: 370px;
+    
+    width: 450px;
     height: 294px;
-    padding: 63px 24px;
+    padding: 77px 24px;
     opacity: 0;
+
+    @media screen  and(min-width: 768px){
+      width: 354px;
+      padding: 49px 24px;
+    }
+
+    @media screen  and(min-width: 1200px){
+      width: 370px;
+      padding: 63px 24px;
+
+    }
+
   }
   
   .card-text-thumb {

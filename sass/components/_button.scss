@@ -39,7 +39,7 @@ margin-top: 50px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-
+  background: none;
   @media screen and (min-width: 1200px) {
     margin-left: 450px;
     
@@ -60,6 +60,7 @@ margin-top: 50px;
 .button-portfolio {
   border: none;
   min-width: 73px;
+  height: 38px;
   padding: 6px 22px;
   cursor: pointer;
 }

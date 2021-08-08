@@ -8,7 +8,6 @@
    
    
 
-
 @media screen and(min-width:768px){
 
   margin-bottom: 60px;
@@ -22,7 +21,6 @@ align-items: center;
 text-align: left;
   
 }
-   
 
   }
   
@@ -112,16 +110,18 @@ text-align: left;
  @media screen and (min-width: 480px) {
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 00.03);
-    filter: drop-shadow(0px, 4px, 4px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow (0px, 4px, 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
   
    }
   }
+
+  /*
    .subscribe-us .mail:focus{
     @media screen and (min-width: 480px) {
       border: var(--accent-color);
   
     }
-  }
+  }*/
  
    

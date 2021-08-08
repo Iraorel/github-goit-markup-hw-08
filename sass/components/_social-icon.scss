@@ -16,15 +16,26 @@
   align-items: center;
   width: 44px;
   height: 44px;
+  
   border-radius: 50%;
   background-color: var(--dark-bg-text-color);
 
+  
+
   &:hover .icon,
   &:focus .icon {
-    fill: var(--accent-color);
+    fill: var(--dark-bg-text-color);
   }
 }
 
+.social-icons-item{
+  &:hover,
+  &:focus  {
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    cursor: default;
+  }
+}
 .footer .social-icons-item{
   &:hover,
   &:focus  {
@@ -37,6 +48,7 @@
   width: 20px;
   height: 20px;
   fill: var(--icon-color);
+
 }
 
 .social-icons-item + .social-icons-item {

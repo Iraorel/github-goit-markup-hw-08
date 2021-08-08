@@ -13,12 +13,14 @@
 
   margin-left: auto;
   margin-right: auto;
+
   background: rgba(47, 48, 58, 0.4);
   background-repeat: no-repeat;
 
   @media screen and (min-width: 280px){
     height: 400px;
     background-image:  url(../images/mobile/heder-mobile.jpg);
+
   }
 
 
@@ -56,6 +58,7 @@
   .hero {
     background-image: url(../images/desktop/heder-desktop.jpg);
     height: 600px;
+    
   }
 }
 
@@ -67,6 +70,11 @@
   }
 }
 
+
+
+.hero:after{
+  background:rgba(47, 48, 58, 0.4); 
+}
 
 .hero__conteiner{
   padding-top: 118px;
