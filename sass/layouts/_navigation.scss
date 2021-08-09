@@ -115,6 +115,7 @@
     color: white;
     text-align: center;
     padding-bottom: 20px;
+    font-style: normal;
 @media screen and(min-width: 1200px) {
   text-align: left;
   
@@ -126,6 +127,7 @@
    letter-spacing: 00.03em;
    color: rgba(255, 255, 255, 00.06em);
   padding-bottom: 20px;
+ font-style: normal;
   @media screen and(min-width: 1200px) {
     text-align: left;
     
@@ -135,6 +137,7 @@
   .adress .tel{
     @include font(14px, 400, 1.71px);
     letter-spacing: 00.03em;
+    font-style: normal;
     color: rgba(255, 255, 255, 00.06em);
 
   }

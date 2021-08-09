@@ -16,62 +16,65 @@
 
   background: rgba(47, 48, 58, 0.4);
   background-repeat: no-repeat;
-
-  @media screen and (min-width: 280px){
+  
+@media screen and (min-width: 280px) and (max-width:480px) {
     height: 400px;
     background-image:  url(../images/mobile/heder-mobile.jpg);
+ 
 
   }
 
 
 }
-@media screen and  (min-device-pixel-ratio:2) and (min-width: 280px) , 
- screen and (min-resolution: 192dpi)and (min-width: 280px) , 
- screen and (min-resolution: 2dppx) and (min-width: 280px) {
+@media screen and  (min-device-pixel-ratio:2) and (min-width: 280px) and(max-width:480px) , 
+ screen and (min-resolution: 192dpi)and (min-width: 280px) and (max-width:480px), 
+ screen and (min-resolution: 2dppx) and (min-width: 280px) and (max-width:480px) {
   .hero {
     background-image: url(../images/mobile/heder-mobile@2x.jpg);
-   
+ 
   }
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px)  and (max-width: 960px){
   .hero {
     background-image: url(../images/tablet/header-tablet.jpg);
     height: 400px;
-    width: 100%;
-
+  
   }
   
 }
 
-@media  screen and (min-device-pixel-ratio:2) and (min-width: 768px) , 
- screen and (min-resolution: 192dpi)and (min-width: 768px) , 
- screen and (min-resolution: 2dppx) and (min-width: 768px) {
+@media  screen and (min-device-pixel-ratio:2) and (min-width: 480px)  and (max-width: 960px)  , 
+ screen and (min-resolution: 192dpi)and (min-width: 480px)  and (max-width: 960px) , 
+ screen and (min-resolution: 2dppx) and (min-width: 480px)  and (max-width: 960px) {
   .hero {
     background-image: url(../images/tablet/header-teblet@2x.jpg);
     height: 400px;
   width: 100%;
+ 
+
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 960px) {
   .hero {
     background-image: url(../images/desktop/heder-desktop.jpg);
     height: 600px;
-    
+   
   }
 }
 
-@media  screen and (min-device-pixel-ratio:2) and (min-width: 1200px) , 
- screen and (min-resolution: 192dpi)and (min-width: 1200px) , 
- screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media  screen and (min-device-pixel-ratio:2) and (min-width: 960px) , 
+ screen and (min-resolution: 192dpi)and (min-width: 960px) , 
+ screen and (min-resolution: 2dppx) and (min-width: 960px) {
   .hero { 
     background-image: url(../images/desktop/heder-desktop@2x.jpg);
-  }
+
+
 }
 
-
+ }
 
 .hero:after{
   background:rgba(47, 48, 58, 0.4); 
