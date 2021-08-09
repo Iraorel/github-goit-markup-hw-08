@@ -8,10 +8,7 @@
    
    
 
-@media screen and(min-width:768px){
 
-  margin-bottom: 60px;
-}
    
 @media screen and(min-width:1200px){
   height: 225px;
@@ -52,6 +49,9 @@ text-align: left;
   .dark__bg-footer {
     height: 603px;
     background-color: var(--dark-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
 
     @media screen and (min-width:1200px) {
       height: auto;
@@ -64,14 +64,6 @@ text-align: left;
     display: -ms-flexbox;
     display: block;
    
-
-    
-
-@media screen and(min-width:1200px){
-
-  padding-top: 60px;
-
-}
   }
 
 
@@ -95,7 +87,7 @@ text-align: left;
     @media screen and(min-width:768px) {
       display: flex;
       justify-content: space-between;
-      padding-top: 60px;
+  
       
     }
 
@@ -124,4 +116,4 @@ text-align: left;
     }
   }*/
  
-   
+ 
