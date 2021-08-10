@@ -134,7 +134,7 @@ summary {
   --accent-color: #2196f3;
   --title-color: #212121;
   --dark-bg-color: #2f303a;
-  --light-bg-color: #f5f4fa;
+  --light-bg-color: #f5f4f4;
   --icon-color: #afb1b8;
   --dark: #000000;
   --border:#ECECEC;
@@ -145,6 +145,9 @@ summary {
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
 }
 
 *,
@@ -163,6 +166,9 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
 }
 
 img {
@@ -321,6 +327,10 @@ img {
   height: 38px;
   padding: 6px 22px;
   cursor: pointer;
+}
+
+.button-portfolio:hover, .button-portfolio:focus {
+  background-color: var(--accent-color);
 }
 
 .footer.button {
@@ -569,16 +579,6 @@ img {
 }
 
 .section-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-  margin-bottom: 50px;
-}
-
-.section-title-comands {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.17;
@@ -589,12 +589,29 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .section-title-comands {
-    margin-bottom: 50px;
+  .section-title {
     font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
   }
 }
 
+/*
+.section-title-comands {
+  @include font(28px, 700, 1.17);
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  margin-bottom: 30px;
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}*/
 .join-title {
   font-size: 14px;
   font-weight: 700;
@@ -787,6 +804,8 @@ img {
   left: 0;
   padding-top: 48px;
   padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -1065,8 +1084,6 @@ img {
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  /*width: 1600px;
-     border-bottom: 1px solid var(--border);*/
 }
 
 @media screen and (min-width: 480px) {
@@ -1108,10 +1125,20 @@ img {
 }
 
 .portfolio-conteiner {
-  width: 1600px;
   border-bottom: 1px solid var(--border);
 }
 
+/*
+   .portfolio-conteiner::after{
+     position: absolute;
+    left:0;
+    right: 0;
+     content: "";
+    display: block;
+     height: 80px;
+     border-bottom: 1px solid var(--border);
+   
+   }*/
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1122,7 +1149,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer {
-    height: 225px;
     display: inline-flex;
     align-items: center;
     text-align: left;
@@ -1157,9 +1183,15 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .dark__bg-footer {
+    height: 463px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .dark__bg-footer {
-    height: auto;
+    height: 252px;
   }
 }
 
@@ -1321,7 +1353,7 @@ img {
   margin-right: auto;
   background: rgba(47, 48, 58, 0.4);
   background-repeat: no-repeat;
-  filter: brightness(0.8);
+  /*filter: brightness(0.9);*/
 }
 
 @media screen and (min-width: 280px) and (max-width: 480px) {
@@ -1637,6 +1669,10 @@ img {
   color: var(--title-color);
 }
 
+.portfolio-text.button-portfolio:hover, .portfolio-text.button-portfolio:focus {
+  color: var(--dark-bg-text-color);
+}
+
 .link-portfolio {
   padding-bottom: 30px;
 }
@@ -1852,7 +1888,7 @@ img {
   font-weight: 400;
   line-height: 1.71px;
   letter-spacing: 00.03em;
-  color: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.6);
   color: white;
   text-align: center;
   padding-bottom: 20px;
@@ -1870,7 +1906,7 @@ img {
   font-weight: 400;
   line-height: 1.71px;
   letter-spacing: 00.03em;
-  color: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.6);
   padding-bottom: 20px;
   font-style: normal;
 }
@@ -1887,7 +1923,7 @@ img {
   line-height: 1.71px;
   letter-spacing: 00.03em;
   font-style: normal;
-  color: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .clients__grup {
@@ -1974,6 +2010,8 @@ img {
   .desc {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
+    margin-right: -30px;
   }
 }
 
@@ -1994,7 +2032,7 @@ img {
   display: -ms-inline-flexbox;
   display: flex;
   margin-bottom: -30px;
-  margin-right: -45px;
+  margin-right: -30px;
   flex-wrap: wrap;
   padding: 0;
 }

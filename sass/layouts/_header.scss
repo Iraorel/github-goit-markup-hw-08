@@ -18,9 +18,6 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
           
-    
-     /*width: 1600px;
-     border-bottom: 1px solid var(--border);*/
  
 
      @media screen and (min-width: 480px) {
@@ -66,7 +63,19 @@
 
 
    .portfolio-conteiner{
-     width: 1600px;
+ 
      border-bottom: 1px solid var(--border);
 
+
    }
+/*
+   .portfolio-conteiner::after{
+     position: absolute;
+    left:0;
+    right: 0;
+     content: "";
+    display: block;
+     height: 80px;
+     border-bottom: 1px solid var(--border);
+   
+   }*/

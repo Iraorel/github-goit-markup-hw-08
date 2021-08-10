@@ -67,6 +67,7 @@
   }
 .portfolio__item{
   padding-top: 15px;
+
 }
   .site-nav__portfolio{
     @media screen  and(min-width: 480px){
@@ -114,8 +115,14 @@
     @include font(16px, 500, 1.63px);
     letter-spacing: 000.03em;
     color: var(--title-color);
+
+    &:hover,
+    &:focus{
+      color: var(--dark-bg-text-color);
+    }
   }
 
   .link-portfolio{
     padding-bottom: 30px;
+   
   }

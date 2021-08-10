@@ -63,6 +63,12 @@ margin-top: 50px;
   height: 38px;
   padding: 6px 22px;
   cursor: pointer;
+
+  &:hover,
+  &:focus{
+    background-color: var(--accent-color);
+  }
+
 }
 .footer.button {
   position: relative;

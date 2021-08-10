@@ -1,6 +1,10 @@
 html {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+            width: 100%;
+            min-width: 100%;
+            overflow-x: hidden;
+          
   }
   
   *,
@@ -19,6 +23,9 @@ html {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    width: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
   }
   
   img {

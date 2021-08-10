@@ -15,13 +15,14 @@
   margin-right: auto;
 
   background: rgba(47, 48, 58, 0.4);
-  background-repeat: no-repeat;
-  filter: brightness(0.8);
+  background-repeat: no-repeat; 
+  /*filter: brightness(0.9);*/
+ 
   
 @media screen and (min-width: 280px) and (max-width:480px) {
     height: 400px;
     background-image:  url(../images/mobile/heder-mobile.jpg);
-
+   
   }
 
 

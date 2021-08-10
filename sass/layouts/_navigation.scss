@@ -111,7 +111,7 @@
   .adress .text{
     @include font(14px, 400, 1.71px);
     letter-spacing: 00.03em;
-    color: rgba(255, 255, 255, 00.06em);
+    color: rgba(255, 255, 255, 00.6em);
     color: white;
     text-align: center;
     padding-bottom: 20px;
@@ -125,7 +125,7 @@
   .adress .mails{
     @include font(14px, 400, 1.71px);
    letter-spacing: 00.03em;
-   color: rgba(255, 255, 255, 00.06em);
+   color: rgba(255, 255, 255, 00.6em);
   padding-bottom: 20px;
  font-style: normal;
   @media screen and(min-width: 1200px) {
@@ -138,6 +138,6 @@
     @include font(14px, 400, 1.71px);
     letter-spacing: 00.03em;
     font-style: normal;
-    color: rgba(255, 255, 255, 00.06em);
+    color: rgba(255, 255, 255, 00.6em);
 
   }
