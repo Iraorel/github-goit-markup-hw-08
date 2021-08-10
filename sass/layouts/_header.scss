@@ -1,11 +1,5 @@
 .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--title-color);
+   border-bottom: 1px solid var(--border);
   }
   
   .header__conteiner {
@@ -17,6 +11,8 @@
             align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
+
+        
           
  
 
@@ -62,13 +58,14 @@
     }
 
 
+/*
    .portfolio-conteiner{
  
      border-bottom: 1px solid var(--border);
 
 
    }
-/*
+
    .portfolio-conteiner::after{
      position: absolute;
     left:0;
