@@ -6,7 +6,10 @@
     width: 100%;
   text-align: center;
    
-   
+  @media screen and(min-width:1200px){
+    padding-left: 50px;
+    padding-right: 50px;
+  }
    
 @media screen and(min-width:1200px){
   
@@ -14,7 +17,8 @@ display: inline-flex;
 
 align-items: center;
 text-align: left;
-  
+  padding-left: 0;
+  padding-right: 0;
 }
 
   }
@@ -64,7 +68,12 @@ text-align: left;
     display: -webkit-box;
     display: -ms-flexbox;
     display: block;
-   
+   padding-top: 60px;
+
+   @media screen  and (min-width: 1200px){
+     padding-top: 0;
+     
+   }
   }
 
 
@@ -88,7 +97,7 @@ text-align: left;
     @media screen and(min-width:768px) {
       display: flex;
       justify-content: space-between;
-  
+      padding-left: 76px;
       
     }
 
@@ -102,8 +111,8 @@ text-align: left;
    .subscribe-us .mail{
  @media screen and (min-width: 480px) {
     box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 00.03);
-    filter: drop-shadow (0px, 4px, 4px rgba(0, 0, 0, 0.15));
+    border: 1px solid rgba(255, 255, 255, 00.3em);
+    /*filter: drop-shadow (0px, 4px, 4px rgba(0, 0, 0, 0.15));*/
     border-radius: 4px;
   
    }

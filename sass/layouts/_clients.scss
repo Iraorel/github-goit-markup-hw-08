@@ -23,6 +23,10 @@
  width: 170px;
   }
 
+  &:hover,
+  &:focus{
+    border:1px solid var(--accent-color);
+  }
 }
 
 
@@ -54,7 +58,8 @@
   transition: var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover .icon,
-  &:focus .icon {
+  &:focus .icon{
+   
     stroke: var(--accent-color);
   }
 }
